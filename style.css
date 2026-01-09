@@ -1,0 +1,308 @@
+@import url(https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbElWcTJnMHpLVFJnWHAyQkdTNGo5RXljQkdsd3xBQ3Jtc0trQk12V2c1RDVKWFpmV205WmJ6cnV5SFpPd1hFa2RjWTF5VGhiX0lyejQ4UnFaVHptazh0ZHR1Q00tRmpBZTNaY0RGRWVYTUdIbnhRTHZfRVdocEJMSW1SS1ZOR2FCVlJSZFJtNW1SLTNTblB6WXIxOA&q=https%3A%2F%2Ffonts.googleapis.com%2Fcss2%3Ffamily%3DPoppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600%26display%3Dswap%27%29%3B&v=-u3vE84Wo_U);
+:root{
+    --text-color: #1a1c20;
+    --link-color:#4a76ee;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing:border-box ;
+    border:0 ;
+    outline: 0;
+}
+
+html{
+    font-size: 63%;
+}
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('backgr.png');
+    background-size: cover; /* This forces the image to fill the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from tiling */
+    background-attachment: fixed;
+    color:var(--text-color);
+    font-family:'Poppins',sans-serif ;
+}
+header{
+    display:flex;
+    margin-top: 20px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;   
+    padding:1rem 10%;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+header a{
+    font-size: 125%;
+    color: var(--text-color);
+}
+
+.left{
+    font-size: 3rem;
+    color:var(--text-color) ;
+    font-weight: 700;
+    transition: 0.9s;
+}
+.left :hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-left: 3rem;
+    transition: 0.5s;
+    border-bottom: 3px solid transparent;
+    color: var(--text-color);
+}
+nav a:hover,
+nav a.active{
+    border-bottom: 3px solid rgb(57, 54, 54);
+    color: rgb(57, 54, 54);
+}
+
+/*HOME SECTION*/
+.Home{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 50px 0 ;
+    gap:15px;
+    align-items:center;
+}
+.homeContent{
+    flex :5;
+    padding-left: 60px;
+}
+.homeContent p {
+    font-size: 12px;
+
+}
+
+.icons a{
+    display: inline-block;
+    padding:5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: var(--link-color);
+    font-weight: 500;
+    border:2px solid var(--link-color);
+    border-radius: 5px;
+}.icons :hover{
+    color: var(--text-color);
+    border:2px var(--text-color);
+    border-radius: 5px;
+}
+
+
+.homeImg img{
+    width: 17vw;
+    cursor: pointer;
+    display: flex;
+    padding-top: 10vw;
+    border-radius: 50%;
+}
+
+/*---Skills section*/
+.Skills{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.Skills-content h2{
+    text-align: center;
+    font-size: 25px;
+}
+.Skills-content p {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 12px;
+
+}
+.cells{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    width: 100%;
+}
+.cells .cell{
+    display: flex;
+    align-items: center;
+    width: 180px;
+    padding:10px 20px ;
+    border: 1.5px solid grey;
+    border-radius:5px ;
+    margin: 5px;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgb(113, 113, 113);
+}
+.cells .cell:hover{
+    border: 2.5px solid var(--link-color) ;
+    color: var(--link-color)
+    ;
+
+}
+.cells .cell img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.cells .cell span{
+    font-weight: 500;
+    font-size: 13px;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+/*---MY PROJECT SECTION---*/
+.projects{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 50px;
+    margin-bottom: 100px;
+    align-content: center;
+    
+}
+.projects .project{
+    display: flex;
+    align-items: center;
+    width: 205px;
+    padding:40px 0px ;
+    border: 1.5px solid grey;
+    border-radius:55px ;
+    margin: 5px;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245,0.5);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.projects .project:hover,
+.projects .project:active{
+    border: 2.5px solid var(--text-color);
+    box-shadow: 0 4px 10px rgba(255, 255, 255);
+    background-color: rgba(132, 129, 129, 0.5);
+}
+.project img{
+     width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+.projects-content h2 {
+    text-align: center;
+    font-size: 25px;
+}
+.projects-content p {
+    margin-top:15px ;
+    margin-bottom: 15px;
+    text-align: center;
+    color: var(--text-color);
+}
+.project h3{
+    color: var(--text-color);
+    text-align: center;
+}
+.project p{
+    color: var(--text-color);
+    text-align: justify;
+    padding: 10px;
+    width: fit-content;
+}
+.project:hover{
+     color: var(--link-color);
+}
+
+/*Contact section*/
+.contact-section{
+    padding: 0 80px;
+    margin-bottom: 100px;
+}
+.contact-section h2{
+    font-size: 35px;
+}
+.contact-section .group{
+    display: flex;
+    gap: 50px;
+    margin-right: 50px;
+}
+
+.contact-section .group .text{
+    flex:3;
+    margin-top: 20px;
+    
+}
+.contact-section .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+ .contact-section .group form input,
+ .contact-section .group form textarea{
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--link-color);
+    padding: 10px;
+    resize: none;
+ }
+ .contact-section .group form button{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: var(--link-color);
+ }
+
+@media(max-width:500px){
+    .Home{
+        flex-direction: column;
+    }
+    .homeImg img{
+        border-radius: 100%;
+        width: 25vw ;
+        padding-top: 5vw;
+    }
+    .contact-section {
+    padding: 1px 34px;
+    margin-bottom: 100px;
+}
+}
+
+@media(max-width:600px){
+    .left{
+        font-size: 1.6rem;
+        color:var(--text-color) ;
+        font-weight: 700;
+        transition: 0.9s;
+    }
+    
+    
+    nav a span{
+        display: none;
+    } 
+
+    .homeContent h1{
+        font-size: 15px;
+    }
+    .homeContent p{
+        font-size: 10px;
+    }
+}
+@media(max-width:750px){
+    .projects .project{
+        width: 150px;
+        padding:30px 0px ;
+    }
+    .project img {
+        width: 130px;
+        height: 110px;
+        object-fit: contain;
+}
+}
