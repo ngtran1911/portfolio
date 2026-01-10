@@ -78,7 +78,7 @@ nav a.active{
 .Home{
     display: flex;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 20px;
     margin: 100px 0 50px;
     gap: 15px;
     align-items: center;
@@ -86,11 +86,15 @@ nav a.active{
 
 .homeContent{
     flex: 5;
-    padding-left: 60px;
+    /* padding-left: 60px; */
 }
 
 .homeContent p{
     font-size: 1.5rem;
+}
+
+.icons {
+    padding-top: 10px;
 }
 
 .icons a{
@@ -119,7 +123,7 @@ nav a.active{
 
 /* ---------- SKILLS ---------- */
 .Skills{
-    padding: 0 50px;
+    padding: 0 20px;
     margin-bottom: 100px;
 }
 
@@ -132,7 +136,7 @@ nav a.active{
     margin-bottom: 15px;
     text-align: center;
     font-size: 1.5rem;
-    padding-left: 60px;
+    /* padding-left: 60px; */
 }
 
 .cells{
@@ -178,12 +182,12 @@ nav a.active{
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
-    padding: 0 50px;
+    padding: 0 20px;
     margin-bottom: 100px;
 }
 
 .projects-content{
-    padding-left: 60px;
+    padding: 0 20px;
 }
 
 .project a {
@@ -241,7 +245,7 @@ nav a.active{
 
 /* ---------- CONTACT ---------- */
 .contact-section{
-    padding: 0 80px;
+    padding: 0 20px;
     margin-bottom: 100px;
 }
 
@@ -257,7 +261,7 @@ nav a.active{
 .contact-section .group .text{
     flex: 3;
     margin-top: 20px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .contact-section .group form{
@@ -277,7 +281,7 @@ nav a.active{
 }
 
 .contact-section .group form button{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Poppins', sans-serif;
     color: white;
     background-color: var(--link-color);
@@ -300,7 +304,7 @@ nav a.active{
 
 @media(max-width: 600px){
     .left{
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
 
     nav a span{
@@ -312,7 +316,7 @@ nav a.active{
     }
 
     .homeContent p{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .Skills-content h2,
