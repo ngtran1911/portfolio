@@ -186,6 +186,12 @@ nav a.active{
     padding-left: 60px;
 }
 
+.project a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
 .projects-content h2{
     text-align: center;
     font-size: 2.5rem;
