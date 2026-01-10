@@ -1,4 +1,5 @@
-@import url(https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbElWcTJnMHpLVFJnWHAyQkdTNGo5RXljQkdsd3xBQ3Jtc0trQk12V2c1RDVKWFpmV205WmJ6cnV5SFpPd1hFa2RjWTF5VGhiX0lyejQ4UnFaVHptazh0ZHR1Q00tRmpBZTNaY0RGRWVYTUdIbnhRTHZfRVdocEJMSW1SS1ZOR2FCVlJSZFJtNW1SLTNTblB6WXIxOA&q=https%3A%2F%2Ffonts.googleapis.com%2Fcss2%3Ffamily%3DPoppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600%26display%3Dswap%27%29%3B&v=-u3vE84Wo_U);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
 :root{
     --text-color: #1a1c20;
     --link-color:#4a76ee;
@@ -8,52 +9,53 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    box-sizing:border-box ;
-    border:0 ;
+    box-sizing: border-box;
+    border: 0;
     outline: 0;
 }
 
 html{
-    font-size: 63%;
+    font-size: 62.5%;
 }
+
 body {
-    margin: 0;
     width: 100%;
     min-height: 100vh;
     background-image: url('backgr.png');
-    background-size: cover; /* This forces the image to fill the entire area */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from tiling */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    color:var(--text-color);
-    font-family:'Poppins',sans-serif ;
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
 }
+
+/* ---------- HEADER ---------- */
 header{
-    display:flex;
-    margin-top: 20px;
-    top: 0;
-    left: 0;
+    display: flex;
     position: fixed;
-    width: 100%;   
-    padding:1rem 10%;
-    background-color: transparent;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 1rem 10%;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background-color: transparent;
 }
 
 header a{
-    font-size: 125%;
+    font-size: 1.25rem;
     color: var(--text-color);
 }
 
 .left{
     font-size: 3rem;
-    color:var(--text-color) ;
     font-weight: 700;
-    transition: 0.9s;
+    transition: 0.3s;
 }
-.left :hover{
+
+.left:hover{
     transform: scale(1.1);
 }
 
@@ -61,248 +63,284 @@ nav a{
     font-weight: 700;
     font-size: 1.6rem;
     margin-left: 3rem;
-    transition: 0.5s;
+    transition: 0.3s;
     border-bottom: 3px solid transparent;
     color: var(--text-color);
 }
+
 nav a:hover,
 nav a.active{
     border-bottom: 3px solid rgb(57, 54, 54);
     color: rgb(57, 54, 54);
 }
 
-/*HOME SECTION*/
+/* ---------- HOME ---------- */
 .Home{
     display: flex;
     justify-content: space-between;
     padding: 0 50px;
-    margin: 50px 0 ;
-    gap:15px;
-    align-items:center;
+    margin: 100px 0 50px;
+    gap: 15px;
+    align-items: center;
 }
+
 .homeContent{
-    flex :5;
+    flex: 5;
     padding-left: 60px;
 }
-.homeContent p {
-    font-size: 12px;
 
+.homeContent p{
+    font-size: 1.5rem;
 }
 
 .icons a{
     display: inline-block;
-    padding:5px 10px;
+    padding: 5px 10px;
     margin-right: 10px;
     margin-bottom: 10px;
     color: var(--link-color);
     font-weight: 500;
-    border:2px solid var(--link-color);
+    border: 2px solid var(--link-color);
     border-radius: 5px;
-}.icons :hover{
-    color: var(--text-color);
-    border:2px var(--text-color);
-    border-radius: 5px;
+    transition: 0.3s;
 }
 
+.icons a:hover{
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
 
 .homeImg img{
     width: 17vw;
     cursor: pointer;
-    display: flex;
     padding-top: 10vw;
     border-radius: 50%;
 }
 
-/*---Skills section*/
+/* ---------- SKILLS ---------- */
 .Skills{
     padding: 0 50px;
     margin-bottom: 100px;
 }
+
 .Skills-content h2{
     text-align: center;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
-.Skills-content p {
+
+.Skills-content p{
     margin-bottom: 15px;
     text-align: center;
-    font-size: 12px;
-
+    font-size: 1.5rem;
+    padding-left: 60px;
 }
+
 .cells{
     display: flex;
     justify-content: space-evenly;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     width: 100%;
 }
+
 .cells .cell{
     display: flex;
     align-items: center;
     width: 180px;
-    padding:10px 20px ;
+    padding: 10px 20px;
     border: 1.5px solid grey;
-    border-radius:5px ;
+    border-radius: 5px;
     margin: 5px;
     justify-content: center;
     box-shadow: 0 4px 10px rgb(113, 113, 113);
+    transition: 0.3s;
 }
-.cells .cell:hover{
-    border: 2.5px solid var(--link-color) ;
-    color: var(--link-color)
-    ;
 
+.cells .cell:hover{
+    border: 2.5px solid var(--link-color);
+    color: var(--link-color);
 }
+
 .cells .cell img{
     width: 30px;
     height: 30px;
     object-fit: contain;
 }
+
 .cells .cell span{
     font-weight: 500;
-    font-size: 13px;
+    font-size: 1.3rem;
     padding-left: 10px;
-    display: inline-block;
 }
 
-/*---MY PROJECT SECTION---*/
+/* ---------- PROJECTS ---------- */
 .projects{
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
     padding: 0 50px;
     margin-bottom: 100px;
-    align-content: center;
-    
 }
+
+.projects-content{
+    padding-left: 60px;
+}
+
+.projects-content h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.projects-content p{
+    margin: 15px 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 .projects .project{
     display: flex;
     align-items: center;
     width: 205px;
-    padding:40px 0px ;
+    padding: 40px 0;
     border: 1.5px solid grey;
-    border-radius:55px ;
+    border-radius: 55px;
     margin: 5px;
     flex-direction: column;
-    background-color: rgb(245, 245, 245,0.5);
+    background-color: rgba(245,245,245,0.5);
     box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    transition: 0.3s;
 }
 
-.projects .project:hover,
-.projects .project:active{
+.projects .project:hover{
     border: 2.5px solid var(--text-color);
-    box-shadow: 0 4px 10px rgba(255, 255, 255);
-    background-color: rgba(132, 129, 129, 0.5);
+    box-shadow: 0 4px 10px rgba(255,255,255);
+    background-color: rgba(132,129,129,0.5);
 }
+
 .project img{
-     width: 200px;
+    width: 200px;
     height: 150px;
     object-fit: contain;
 }
-.projects-content h2 {
-    text-align: center;
-    font-size: 25px;
-}
-.projects-content p {
-    margin-top:15px ;
-    margin-bottom: 15px;
-    text-align: center;
-    color: var(--text-color);
-}
+
 .project h3{
-    color: var(--text-color);
     text-align: center;
-}
-.project p{
-    color: var(--text-color);
-    text-align: justify;
-    padding: 10px;
-    width: fit-content;
-}
-.project:hover{
-     color: var(--link-color);
 }
 
-/*Contact section*/
+.project p{
+    padding: 10px;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+/* ---------- CONTACT ---------- */
 .contact-section{
     padding: 0 80px;
     margin-bottom: 100px;
 }
+
 .contact-section h2{
-    font-size: 35px;
+    font-size: 3.5rem;
 }
+
 .contact-section .group{
     display: flex;
     gap: 50px;
-    margin-right: 50px;
 }
 
 .contact-section .group .text{
-    flex:3;
+    flex: 3;
     margin-top: 20px;
-    
+    font-size: 1.5rem;
 }
+
 .contact-section .group form{
     flex: 3;
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    min-width: 0;
 }
- .contact-section .group form input,
- .contact-section .group form textarea{
+
+.contact-section .group form input,
+.contact-section .group form textarea{
     font-family: 'Poppins', sans-serif;
     border: 2px solid var(--link-color);
     padding: 10px;
     resize: none;
- }
- .contact-section .group form button{
-    font-size: 15px;
+}
+
+.contact-section .group form button{
+    font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     color: white;
     background-color: var(--link-color);
- }
+    padding: 10px;
+    cursor: pointer;
+}
 
-@media(max-width:500px){
+/* ---------- RESPONSIVE ---------- */
+@media(max-width: 750px){
+    .projects .project{
+        width: 150px;
+        padding: 30px 0;
+    }
+
+    .project img{
+        width: 130px;
+        height: 110px;
+    }
+}
+
+@media(max-width: 600px){
+    .left{
+        font-size: 1.6rem;
+    }
+
+    nav a span{
+        display: none;
+    }
+
+    .homeContent h1{
+        font-size: 1.5rem;
+    }
+
+    .homeContent p{
+        font-size: 1rem;
+    }
+
+    .Skills-content h2,
+    .projects-content h2{
+        font-size: 1.5rem;
+    }
+
+    .Skills-content p,
+    .projects-content p,
+    .contact-section .group .text{
+        font-size: 1.2rem;
+    }
+
+    .contact-section h2{
+        font-size: 2.5rem;
+    }
+
+    .contact-section .group{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media(max-width: 500px){
     .Home{
         flex-direction: column;
     }
+
     .homeImg img{
-        border-radius: 100%;
-        width: 25vw ;
+        width: 25vw;
         padding-top: 5vw;
     }
-    .contact-section {
-    padding: 1px 34px;
-    margin-bottom: 100px;
-}
-}
 
-@media(max-width:600px){
-    .left{
-        font-size: 1.6rem;
-        color:var(--text-color) ;
-        font-weight: 700;
-        transition: 0.9s;
+    .contact-section{
+        padding: 0 34px;
     }
-    
-    
-    nav a span{
-        display: none;
-    } 
-
-    .homeContent h1{
-        font-size: 15px;
-    }
-    .homeContent p{
-        font-size: 10px;
-    }
-}
-@media(max-width:750px){
-    .projects .project{
-        width: 150px;
-        padding:30px 0px ;
-    }
-    .project img {
-        width: 130px;
-        height: 110px;
-        object-fit: contain;
-}
 }
